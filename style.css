@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Times New Roman', Times, serif;
+  background: lightsteelblue;
+  color: darkblue;
+  padding: 2rem;
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+  
+}
+
+header{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.brand{
+  font-size: 3rem;
+  color: darkslateblue;
+  font-weight: bold;
+}
+
+.tagline{
+  font-size: 1.2rem;
+  color: black;
+  font-style: italic;
+}
+
+.product-display{
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.gallery{
+  flex: 1;
+  position: relative;
+}
+
+.gallery input{
+  display: none;
+  
+}
+
+.images{
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image{
+  display: none ;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+}
+
+#img1:checked ~ .images #slide1,
+#img2:checked ~ .images #slide2,
+#img3:checked ~ .images #slide3{
+  display: block;
+}
+
+.image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnails{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.thumbnails label{
+  cursor: pointer;
+}
+
+.thumbnails img{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-info{
+  flex: 1;
+}
+
+.product-info h2{
+  font-size: 2rem;
+  color: mediumblue;
+  
+}
+
+.description{
+  margin: 1rem;
+  color: darkslateblue;
+  line-height: bold;
+}
+
+.peice{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: darkred;
+}
+
+
+button{
+  background: blanchedalmond;
+  color: darkblue;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
